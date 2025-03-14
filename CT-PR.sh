@@ -10,7 +10,7 @@ NEXTID=$(pvesh get /cluster/nextid)
 
 # Verificar se o template Debian 12 está disponível, caso contrário, fazer o download
 TEMPLATE_STORAGE="local"
-TEMPLATE_NAME="debian-12-standard_12.0-1_amd64.tar.gz"
+TEMPLATE_NAME="debian-12-standard_12.2-1_amd64.tar.gz"
 TEMPLATE_PATH="/var/lib/vz/template/cache/$TEMPLATE_NAME"
 
 if [ ! -f "$TEMPLATE_PATH" ]; then
