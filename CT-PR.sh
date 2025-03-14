@@ -25,7 +25,7 @@ pct create $NEXTID $TEMPLATE_PATH --hostname $HOSTNAME --password $PASSWORD --st
 pct start $NEXTID
 
 # Executar o comando dentro do container
-pct exec $NEXTID -- bash -c "$(wget -qLO - https://raw.githubusercontent.com/joaodanielcs/nginx_Proxy_reverso/refs/heads/main/install.sh)"
+#pct exec $NEXTID -- bash -c "$(wget -qLO - https://raw.githubusercontent.com/joaodanielcs/nginx_Proxy_reverso/refs/heads/main/install.sh)"
 
 echo "Container criado e configurado com sucesso!"
 echo "ID: $NEXTID"
