@@ -45,6 +45,8 @@ services:
       - /srv/dev-disk-by-label-data/dockerapp/nginx/mysql:/var/lib/mysql
 EOF
 docker-compose up -d
+for container in $(docker ps -a -q); do
+    docker update --restart unless-stopped $container
 clear
 ip=$(hostname -I | awk '{print $1}')
 echo "Server:   http://$ip:81/login"
